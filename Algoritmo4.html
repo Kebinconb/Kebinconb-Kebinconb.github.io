@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 4</title>
+    <link rel="stylesheet" href="Algoritmo3.css">
+    <script>
+        function fibonacci(){
+            if(!isNaN(document.getElementById("Lim").value) && (document.getElementById("Lim").value) > 0 ){
+            var num1 = 0;
+            var num2 = 1;
+            var num3 = "";
+            var limite = parseInt(document.getElementById("Lim").value);
+            var resultado = `${num1}, ${num2}`;
+            do{
+                num3 = num1 + num2;
+                if (num3 < limite){
+                resultado += `, ${num3} `;
+                num1 = num2;
+                num2 = num3;
+                }
+            }while((num3) <= limite)
+            document.getElementById("out").innerHTML=`Fibonacci: ${resultado}`;
+        }else{
+            document.getElementById("out").innerHTML= "Debe ingresar un numero positivo";
+        }
+    }
+    </script>
+</head>
+<body bgcolor="#b2c7cb" align="center">
+    <h1>Sucesion de Fibonacci</h1>
+    <h2>Urias Ramirez Kevin Alejandro</h2>
+    <h3>Serie o Sucesion de Fibonacci, solicite el limite al usuario.</h3>
+Fibonacci = 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987 <br><br>
+Limite <input type="text" value="30" id="Lim"><br><br>
+<input type="button" value="Calcular" onclick="fibonacci()"><br>
+<p id="out">Fibonacci: </p>
+<p><a href="index.html">Regresar al menu</a><br></p>
+</body>
+</html>

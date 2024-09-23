@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b2c7cb;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 50px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #34495e;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        input[type="button"],
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        input[type="button"]:hover,
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        table {
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+    </style>
+    <script src="Arreglo1.js"></script>
+</head>
+<body onload="Aleatorios()">
+    <a href="index.html"><button>Regresar al menú</button></a><br>
+    <h1>Arreglo 1 - Horizontal y Vertical</h1>
+    <p>Capture un arreglo de 10 elementos de tipo entero, imprima el arreglo de forma vertical y horizontal,
+        imprima el arreglo de forma ascendente y descendente, encuentre el elemento menor, el mayor, la suma, el promedio o media, y la moda.</p>
+    
+    <p style="display: inline;" id="contador">Elemento [0]:</p>
+    <input type="number" id="elementoInput">
+    <input type="button" value="Capturar" onclick="Capturar(); Aleatorios()" id="botonC">
+    <input type="button" value="Reiniciar" onclick="Reiniciar()">
+    <input type="button" value="Resultados" id="botonGenerar" onclick="Calcular()" disabled> 
+
+    <br><br>
+    <p id="resultados"></p>
+
+    <table border="1" id="TablaHorizontal">
+        <tr id="renglonIndice"></tr>
+        <tr id="renglonDato"></tr>
+    </table>
+
+    <table border="1" id="TablaHorizontal2"> 
+        <tr id="renglonIndice2"></tr>
+        <tr id="renglonDato2"></tr>
+    </table>
+
+    <table border="1" id="TablaHorizontal3">
+        <tr id="renglonIndice3"></tr>
+        <tr id="renglonDato3"></tr>
+    </table>
+    
+    <br>
+    
+    <table id="TablaVertical" border="1" style="display: inline-block;"></table>
+    <table id="TablaVertical2" border="1" style="display: inline-block;"></table>
+    <table id="TablaVertical3" border="1" style="display: inline-block;"></table>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b2c7cb;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-weight: normal;
+        }
+
+        input[type="text"],
+        select {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        input[type="button"],
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        input[type="button"]:hover,
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+
+        h1#verificar {
+            color: crimson;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+    </style>
+    <script src="Arreglo2.js"></script>
+</head>
+<body onload="Generar()">
+    <h1>Arreglo 2 - Cuadrado Mágico</h1>
+    <p>Los cuadrados mágicos son un conjunto de números enteros diferentes colocados en las casillas de un cuadrado y que se caracterizan porque las sumas de sus filas, columnas y diagonales principales es siempre la misma. El valor de la suma es denominado Constante Mágica del Cuadrado.</p>
+    <br>
+    <p>Selecciona el tamaño del cuadrado:</p>
+    <select id="lados" onchange="Generar()">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <input type="button" value="Generar" onclick="Generar()">
+    <input type="button" value="Calcular" onclick="Calcular()">
+    <input type="button" value="Ejemplo al cuadrado" onclick="EjemploCuadrado()">
+    <input type="button" value="Ejemplo al cuadrado mágico" onclick="EjemploMagico()">
+    <br><br>
+    <table border="0.5" id="cuadrado" style="border-collapse: collapse;"></table>
+    <h1 id="verificar">No es cuadrado mágico</h1>
+    <a href="index.html"><button>Regresar al menú</button></a><br>
+</body>
+</html>

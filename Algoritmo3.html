@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 3 - Cubo de Números Naturales</title>
+    <link rel="stylesheet" href="Algoritmo3.css">
+    <script>
+        function cubo() {
+            var naturales = parseInt(document.getElementById("num").value);
+            var resultado = "Resultado:<br>";
+
+            if (!isNaN(naturales) && naturales > 1) {
+                for (let i = 1; i <= naturales; i++) {
+                    if (i % 2 == 0) {
+                        resultado += `${i} al cubo es: ${i*i*i}<br>`;
+                    }
+                }
+                document.getElementById("out").innerHTML = resultado;
+            } else {
+                document.getElementById("out").innerHTML = "El valor ingresado debe ser numérico y mayor a 1";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Números Enteros Naturales Elevados al Cubo</h1>
+    <h2>Urias Ramirez Kevin Alejandro</h2>
+    <h3>Escribir un programa que muestre en pantalla los números naturales pares elevados al cubo.<br>Ejemplo:</h3>
+    
+    <p>
+        2 al cubo es 8 <br>
+        4 al cubo es 64 <br>
+        6 al cubo es ... <br>
+        8 al cubo es ... <br>
+        100 al cubo es ... <br>
+    </p>
+    
+    <p>Cantidad <input type="text" value="20" id="num"></p>
+    
+    <input type="button" value="Calcular" onclick="cubo()"><br>
+    <p id="out">Resultado</p>
+    <p><a href="index.html">Regresar al menú</a></p>
+</body>
+</html>
