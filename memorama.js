@@ -48,7 +48,8 @@ if(contador != 8){
     document.getElementById("contador").innerHTML = `Pares Encontrados: ${contador} Ganaste!!`;
 }
 }
-function Resolver() {
+
+function Revolver() {
     var i = 0, j = 0, temporal  = 0;
     for (let i = 0; i < tarjetas.length-1; i++) {
         j = Math.floor(Math.random() * (i+1));
