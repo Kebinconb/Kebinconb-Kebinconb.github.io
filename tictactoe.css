@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b2c7cb; /* Fondo más suave */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo horizontalmente */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Estilo para los títulos */
+h1, h2, h3 {
+    color: #2c3e50; /* Color de los títulos */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #333; /* Aplica un borde a todas las celdas */
+}
+
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #3498db; /* Color de los botones */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #2980b9; /* Color de hover */
+}
+
+/* Estilo para los botones */
+.buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin-top: 20px;
+}
+
+input[type="submit"], button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db; /* Color de los botones */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #2980b9; /* Color de hover */
+}
+
+tr, td {
+    position: relative;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    border-left: none;
+    border-right: 5px solid #2c3e50; /* Ajuste de bordes */
+}
+
+tr:nth-child(1), tr:nth-child(2) {
+    border-top: none;
+    border-bottom: 5px solid #2c3e50; /* Ajuste de bordes */
+}
+
+/* Estilo para los inputs de texto */
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+p#out {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #27ae60; /* Color del mensaje de salida */
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
