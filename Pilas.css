@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b2c7cb;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+#mensaje {
+    position: fixed;
+    top: 150px;
+    right: 270px;
+    color: #e74c3c;
+    font-size: 2em;
+}
+
+img {
+    position: fixed;
+    width: 600px;
+    height: 450px;
+    top: 250px;
+    right: 200px;
+}
+
+button, input[type="button"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #2980b9;
+}
+
+#regreso {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    position: fixed;
+    right: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#regreso:hover {
+    background-color: #2980b9;
+}
+
+p, select, input[type="text"] {
+    font-size: 1.1em;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p#out {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #27ae60;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+#Etiqueta {
+    display: inline-block;
+}
