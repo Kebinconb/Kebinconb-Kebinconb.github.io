@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista - Urias Kevin</title>
+    <link rel="stylesheet" href="listas.css">
+    <script src="listasOF.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista</h1>
+        Elemento:
+        <input type="text" id="Elemento" onkeyup="CambioTexto()">
+        <input type="button" value="push()" id="pushh" onclick="pushhh()">
+        <!-- Botones adicionales para funciones no implementadas -->
+        <input type="button" value="pop()">
+        <input type="button" value="shift()">
+        <input type="button" value="unshift()" id="unshiftt">
+        <input type="button" value="indexOf()" id="indexx">
+        <input type="button" value="includes()" id="includess">
+        <input type="button" value="sort()">
+        <input type="button" value="reverse()">
+        
+        <br><br> Posición:
+        <input type="number" id="Posicion" min="0" oninput="CambioTexto()">
+        <input type="button" value="insert_at()" id="insertt">
+        <input type="button" value="clear()">
+        <br><br>
+
+        <table>
+            <tbody id="tabla"></tbody>
+        </table>
+    </div>
+    <a href="index.html"><button>Regresar al menu</button></a>
+</body>
+</html>
